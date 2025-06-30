@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f2f2f2] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#141414]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">Artisan Stone</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="nav-link" href="productpage.html">Products</a>
+              <a class="nav-link" href="service.html">Services</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="aboutUs.html">Qui Sommes-Nous</a>
+              <a class="nav-link" href="contactUs.html">Contact</a>
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </div>
+            <div class="hamburger" id="hamburger-menu" tabindex="0" aria-label="Open navigation" role="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="flex gap-2">
+              <button
+                id="login-btn"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f2f2f2] text-[#141414] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Log in</span>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f2f2f2] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#141414]" data-icon="Globe" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVOt11H5eTRgsPBatUjW2LgvQ8EivfSKLQanX0noUGgFRQGnUJGf_2RgsQuYWPZRJcEv5RRH1b53S-ASoU4lM1k9PtCR0RFfgBdNTpvyd8Q-AOALeVY0dXmGH6jpUAK3j1UyX678j3Akn19Hgfjkx5YCmIY-FLRI573hKwcSDAECH_nWlCMBzse6arEUKG7QJsV3zUrigtI6cB0KzXioM3XwFlZI1ZXMorBdiHIZ_SSyzcLr2Jo6Hg_V7qp95OI9_JQQXi25qHC6Y");'
+            ></div>
+          </div>
+        </header>
+        <nav class="mobile-nav" id="mobile-nav">
+          <a class="nav-link" href="productpage.html">Products</a>
+          <a class="nav-link" href="service.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="aboutUs.html">Qui Sommes-Nous</a>
+          <a class="nav-link" href="contactUs.html">Contact</a>
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </nav>
+        <script>
+          const hamburger = document.getElementById('hamburger-menu');
+          const mobileNav = document.getElementById('mobile-nav');
+          hamburger.addEventListener('click', () => {
+            mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+          hamburger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+            }
+          });
+        </script>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#141414] tracking-light text-[32px] font-bold leading-tight">Our Work</p>
+                <p class="text-[#757575] text-sm font-normal leading-normal">
+                  Explore our collaborations with Moroccan construction businesses, showcasing the transformative power of our marble, Zellij, and mosaic solutions.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCouU7m_ZBt-DSM5QIxwI1x88hJX4_kh7gYmm2HqzDNckp0EA_KxXUJA4i5j8oiIkEev6vpPpX49Q08tEXV4BJLmt9Z4WLGDRIPYqGHXRdmmZq7HQ7FASOyGKLf35vMatmrnwDTOX6xU2JDblgyeTfNbR2YWz9v2IpefkCMaCdtxPtxu9ADL_KYnGiBeCn0z-mVdcwkp6V6tDb1n9bPdEBp77VuJXSwQ0OVH1046blSVekvDwNUp7_GPhJw0Vs55qOxDGvyAPhJx_4");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Luxury Hotel Lobby</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">
+                    Custom marble flooring and wall cladding elevate the lobby of a luxury hotel in Marrakech, creating a grand and welcoming atmosphere.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBAZorWFvu-ryxErMUV3JoKkrmQq5QP5BwNj_Myyuof3lHWuEY3sB1azO-EfCg-HwRC74uZ0JjDf8EIIfgax8WF7iLY4EChPi_HtCkg1YsMiEUAMrvUmMlykQZ-e7H3-VdOV1pHQJuKr5fhLL9byfBPUuxIuQGPZSv6zh6n1o80epZk-hP446mzuXLnn1VS_19UtK09HoMRbRkL6lYFXiapz72hxiwdwDOyFTAF2gqlSAcLFbUbCT0hH9oxEvEAcXheZtrmoD8Ses");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Residential Complex Entrance</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">
+                    Zellij tilework adds a touch of Moroccan artistry to the entrance of a modern residential complex in Casablanca.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCz_0s0ZYVNnaqlxfKz9-DzsaWRoPgrem1bFyRhU5dAQKLtXcaqzLu5jx77oeYkGGDlta92y-7u4U6PFv9x_SB1KPzP7I1kKGVsX1KvuvXt238-SvYCn-4SGuaJ9MhQ96LF4f3HIfVILxPVh358hAEBHbZ_FfyrtgXNNo4Zv1PZe4iLGBJRm9qrEVFv0j58gtMp3qnMh1JdQAde2vhh8cbuCVcXRguThh487JSzt1LnwVINWB5u6HGuA7oQ6AcNNYIj3EmrtG-REC4");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Boutique Retail Space</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">
+                    Intricate mosaic patterns enhance the visual appeal of a boutique retail space in Rabat, reflecting the brand's identity.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Coming Soon</h2>
+            <div class="flex flex-col px-4 py-6">
+              <div class="flex flex-col items-center gap-6">
+                <div
+                  class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg w-full max-w-[360px]"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSx7sW6LsKZIDiETS-jmkH1C91TLBn0AHD7t5bLnOawCsyi2_A-62NeK0ct7R3WXmN2HxhP4hhlPOozXSkcFu7MjsvscST6IhdnjIhkcGmL-UNxwKizpYmdpRxExme26CdC6PGWOUjTo3-CPQKVEV3IvAPepHCy3qDetK-C34ABavzk4bm1-b47NxniL2En77BNGY5_3DCauMvxjSoSMZ81F8aHenBeH2tXFMx6NujoYh3G8H6leJ_KuGQXCuIgMeGXUGs9CRH1Ec");'
+                ></div>
+                <div class="flex max-w-[480px] flex-col items-center gap-2">
+                  <p class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">More projects coming soon</p>
+                  <p class="text-[#141414] text-sm font-normal leading-normal max-w-[480px] text-center">
+                    We're constantly working on new and exciting projects. Check back soon for more examples of our work.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

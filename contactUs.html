@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+      style='--select-button-svg: url(&apos;data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(117,117,117)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e&apos;); font-family: "Noto Serif", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f2f2f2] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#141414]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">Artisan Stone</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="nav-link" href="productpage.html">Products</a>
+              <a class="nav-link" href="service.html">Services</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="aboutUs.html">Qui Sommes-Nous</a>
+              <a class="nav-link" href="contactUs.html">Contact</a>
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </div>
+            <div class="hamburger" id="hamburger-menu" tabindex="0" aria-label="Open navigation" role="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </header>
+        <nav class="mobile-nav" id="mobile-nav">
+          <a class="nav-link" href="productpage.html">Products</a>
+          <a class="nav-link" href="service.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="aboutUs.html">Qui Sommes-Nous</a>
+          <a class="nav-link" href="contactUs.html">Contact</a>
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </nav>
+        <script>
+          const hamburger = document.getElementById('hamburger-menu');
+          const mobileNav = document.getElementById('mobile-nav');
+          hamburger.addEventListener('click', () => {
+            mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+          hamburger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+            }
+          });
+        </script>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#141414] tracking-light text-[32px] font-bold leading-tight">Get in Touch</p>
+                <p class="text-[#757575] text-sm font-normal leading-normal">
+                  We're here to help you bring your vision to life. Whether you're looking for a quote, consultation, or samples, our team is ready to assist you.
+                </p>
+              </div>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Business Name</p>
+                <input
+                  placeholder="Enter your business name"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#f2f2f2] focus:border-none h-14 placeholder:text-[#757575] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Contact Name</p>
+                <input
+                  placeholder="Enter your contact name"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#f2f2f2] focus:border-none h-14 placeholder:text-[#757575] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Email Address</p>
+                <input
+                  placeholder="Enter your email address"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#f2f2f2] focus:border-none h-14 placeholder:text-[#757575] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Phone Number</p>
+                <input
+                  placeholder="Enter your phone number"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#f2f2f2] focus:border-none h-14 placeholder:text-[#757575] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Inquiry Type</p>
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#f2f2f2] focus:border-none h-14 bg-[image:--select-button-svg] placeholder:text-[#757575] p-4 text-base font-normal leading-normal"
+                >
+                  <option value="one"></option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Message</p>
+                <textarea
+                  placeholder="Please provide details about your project, including materials of interest, quantities, and any specific requirements."
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#f2f2f2] focus:border-none min-h-36 placeholder:text-[#757575] p-4 text-base font-normal leading-normal"
+                ></textarea>
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                id="submit-inquiry-btn"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#141414] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Submit Inquiry</span>
+              </button>
+            </div>
+            <h3 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Contact Information</h3>
+            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">Phone: +212 522 36 78 90</p>
+            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">Email: info@artisanstone.ma</p>
+            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">Address: 123 Rue Hassan II, Casablanca, Morocco</p>
+            <div class="flex px-4 py-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg object-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWTBuVczunH1HSyiA-obmqdAbFO4fgBITCp7km0PizJertFw0X6gcRS0_xkDtnuLQXSsx4J39IVzIexCmlMfGp4f-aIisNKwnfsAe0kOINb8Gxgl8ykOE_bQ0b7iFw8d719QmFhJ6sK7NIxOVagZgYg6EVuvhFqRzTXF1tLKQH-q2Ixx7vtG_s7lRgTX8xw4e38fYQ7yaDUVPBI4HJQp8GGO1uoYkKP2Xumda8stKd3fvFy4Z0TKBAN_DcPHKkaZtWQ5rgejju2pw");'
+              ></div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">Products</a>
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">Projects</a>
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">About Us</a>
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+              </div>
+              <p class="text-[#757575] text-base font-normal leading-normal">© 2024 Artisan Stone. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

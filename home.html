@@ -1,0 +1,274 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f2f2f2] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#141414]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">Artisanat Marocain</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="nav-link" href="productpage.html">Products</a>
+              <a class="nav-link" href="service.html">Services</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="aboutUs.html">Qui Sommes-Nous</a>
+              <a class="nav-link" href="contactUs.html">Contact</a>
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </div>
+            <div class="hamburger" id="hamburger-menu" tabindex="0" aria-label="Open navigation" role="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="flex gap-2">
+              <button
+                id="quote-btn"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#141414] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Demandez Votre Devis</span>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f2f2f2] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#141414]" data-icon="GlobeHemisphereWest" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm88,104a87.62,87.62,0,0,1-6.4,32.94l-44.7-27.49a15.92,15.92,0,0,0-6.24-2.23l-22.82-3.08a16.11,16.11,0,0,0-16,7.86h-8.72l-3.8-7.86a15.91,15.91,0,0,0-11-8.67l-8-1.73L96.14,104h16.71a16.06,16.06,0,0,0,7.73-2l12.25-6.76a16.62,16.62,0,0,0,3-2.14l26.91-24.34A15.93,15.93,0,0,0,166,49.1l-.36-.65A88.11,88.11,0,0,1,216,128ZM143.31,41.34,152,56.9,125.09,81.24,112.85,88H96.14a16,16,0,0,0-13.88,8l-8.73,15.23L63.38,84.19,74.32,58.32a87.87,87.87,0,0,1,69-17ZM40,128a87.53,87.53,0,0,1,8.54-37.8l11.34,30.27a16,16,0,0,0,11.62,10l21.43,4.61L96.74,143a16.09,16.09,0,0,0,14.4,9h1.48l-7.23,16.23a16,16,0,0,0,2.86,17.37l.14.14L128,205.94l-1.94,10A88.11,88.11,0,0,1,40,128Zm102.58,86.78,1.13-5.81a16.09,16.09,0,0,0-4-13.9,1.85,1.85,0,0,1-.14-.14L120,174.74,133.7,144l22.82,3.08,45.72,28.12A88.18,88.18,0,0,1,142.58,214.78Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+        <nav class="mobile-nav" id="mobile-nav">
+          <a class="nav-link" href="productpage.html">Products</a>
+          <a class="nav-link" href="service.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="aboutUs.html">Qui Sommes-Nous</a>
+          <a class="nav-link" href="contactUs.html">Contact</a>
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </nav>
+        <script>
+          const hamburger = document.getElementById('hamburger-menu');
+          const mobileNav = document.getElementById('mobile-nav');
+          hamburger.addEventListener('click', () => {
+            mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+          hamburger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+            }
+          });
+        </script>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDinBSaBBANPqQ3bUaf8raO2SHNmUngwJllVOayW-qNZlSLmzaZfOTKBD8idYWEEpDhx7xsUNV6gDmXg-lLuirG45BxKFiivaw7SDEbe_m8Kg2NkZn4GIZmIH9nF13FtruwG3yrZ3BStWgQz-aJOMu1tNtyT6ZL0T2rmzqLYMSBP_NbECg8I7yuvbzencGBqsbx8Lp2k135jDdGH7RteVlqkKYL4Xneza1_T1MHarqJgIq5goisP8ShVnqEpLciLltA_MxNkCPPi9s");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Partenariat Stratégique? Demandez Votre Devis Personnalisé.
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Nous offrons des solutions sur mesure en marbre, zellige et mosaïque pour les entreprises de construction au Maroc.
+                    </h2>
+                  </div>
+                  <button
+                    id="quote-btn"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#141414] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Demandez Votre Devis</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#141414] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Pourquoi Choisir Artisanat Marocain?
+                </h1>
+                <p class="text-[#141414] text-base font-normal leading-normal max-w-[720px]">
+                  Nous sommes le partenaire de choix pour les entreprises de construction au Maroc, offrant des produits de qualité supérieure et un service personnalisé.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e0e0e0] bg-white p-4 flex-col">
+                  <div class="text-[#141414]" data-icon="SquaresFour" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M104,40H56A16,16,0,0,0,40,56v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,104,40Zm0,64H56V56h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,64H152V56h48v48Zm-96,32H56a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,104,136Zm0,64H56V152h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,200,136Zm0,64H152V152h48v48Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#141414] text-base font-bold leading-tight">Qualité Inégalée</h2>
+                    <p class="text-[#757575] text-sm font-normal leading-normal">
+                      Nous sélectionnons les meilleurs matériaux pour garantir une qualité et une durabilité exceptionnelles.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e0e0e0] bg-white p-4 flex-col">
+                  <div class="text-[#141414]" data-icon="PencilLine" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H216a8,8,0,0,0,0-16H115.32l112-112A16,16,0,0,0,227.32,73.37ZM136,75.31,152.69,92,68,176.69,51.31,160ZM48,208V179.31L76.69,208Zm48-3.31L79.32,188,164,103.31,180.69,120Zm96-96L147.32,64l24-24L216,84.69Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#141414] text-base font-bold leading-tight">Design Sur Mesure</h2>
+                    <p class="text-[#757575] text-sm font-normal leading-normal">Notre équipe de designers crée des solutions uniques adaptées à chaque projet.</p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e0e0e0] bg-white p-4 flex-col">
+                  <div class="text-[#141414]" data-icon="Handshake" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M119.76,217.94A8,8,0,0,1,112,224a8.13,8.13,0,0,1-2-.24l-32-8a8,8,0,0,1-2.5-1.11l-24-16a8,8,0,1,1,8.88-13.31l22.84,15.23,30.66,7.67A8,8,0,0,1,119.76,217.94Zm132.69-96.46a15.89,15.89,0,0,1-8,9.25l-23.68,11.84-55.08,55.09a8,8,0,0,1-7.6,2.1l-64-16a8.06,8.06,0,0,1-2.71-1.25L35.86,142.87,11.58,130.73a16,16,0,0,1-7.16-21.46L29.27,59.58h0a16,16,0,0,1,21.46-7.16l22.06,11,53-15.14a8,8,0,0,1,4.4,0l53,15.14,22.06-11a16,16,0,0,1,21.46,7.16l24.85,49.69A15.9,15.9,0,0,1,252.45,121.48Zm-46.18,12.94L179.06,80H147.24L104,122c12.66,8.09,32.51,10.32,50.32-7.63a8,8,0,0,1,10.68-.61l34.41,27.57Zm-187.54-18,17.69,8.85L61.27,75.58,43.58,66.73ZM188,152.66l-27.71-22.19c-19.54,16-44.35,18.11-64.91,5a16,16,0,0,1-2.72-24.82.6.6,0,0,1,.08-.08L137.6,67.06,128,64.32,77.58,78.73,50.21,133.46l49.2,35.15,58.14,14.53Zm49.24-36.24L212.42,66.73l-17.69,8.85,24.85,49.69Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[#141414] text-base font-bold leading-tight">Partenariat Durable</h2>
+                    <p class="text-[#757575] text-sm font-normal leading-normal">
+                      Nous construisons des relations solides et durables avec nos partenaires pour assurer le succès de leurs projets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nos Produits</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3wnaKSwrJ4MC2mStEWVHtgi5_YOKcITzYL1J7dHSU9EWdtUtzuTaf7uA2zboJ6k52UkDT7KLH-XySsQYDZqqB5SWWROaB2D4vVMCR6o9vzp_pIpS3EcuCsVORIwhBzodYvX_INAhoa-gWi3cYgSAsSeIJW67auneRqUulab2w7zcHWlqEcNzIK46Ev0lx_Z6fp8EvIeRntwDvoob9sT4LoAysOm3UNNdAm4EjtiS-q_mZ9zeCxNeJKH2-crtDuHFXzwh6PVgjpbo");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Marbre de Carrare</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">Le marbre le plus prestigieux pour des projets de luxe.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCwmnUky661CuyUYiNQHHjaT3MHEJs_akJvXkNbbcUmiXwHYwJo5iXpomI-aWl4R6FMdrYcBSV3ZQcRFYQsGwIvQzyDHXYpWb6xCTqvOlvMT89E8z1hqhfrAfk_zrwzgeHlxZ-Bw4uyr_GCUB_KOv1UPJPToyrrEp824vNDful2yCVH0OaTGOp4QX7biFz_PCLx4PDG_DBeb8u2_b2r_EsiUjleVPRwaLZDE6pXfuwXWagECVAxnXObzXrX1jtds4v6ieSQ2hfpJto");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Zellige Traditionnel</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">L'art du zellige marocain pour des décors authentiques.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwWwjUooHatfbJz_q6XvN0yZKzGaOWoxKY7hdcD7je5oeVhUJKBlX_oiBdb10Gl8oSshgzDXttfuqlIKEdnLjtDjkKy9GwiAJCatzKkh38MAw7FURYLK-BdyjevewTgdwpGVx9OK_LaB-YZZS67NqTBMQM8S0DaZsL2cQtIvkcs6LIXeV6dt4h1UOKfnZeZ8hOftztSqjD2ISKcPCYZXAwRzwGYd8FiSbuWCVOffQ_DvQCtKJx69t4DlkTp9tz8dNIDwdPtWAV_nI");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Mosaïque Artistique</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">Des mosaïques uniques pour des créations artistiques.</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nos Services</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e0e0e0] bg-white p-4 flex-col">
+                <div class="text-[#141414]" data-icon="Ruler" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M235.32,73.37,182.63,20.69a16,16,0,0,0-22.63,0L20.68,160a16,16,0,0,0,0,22.63l52.69,52.68a16,16,0,0,0,22.63,0L235.32,96A16,16,0,0,0,235.32,73.37ZM84.68,224,32,171.31l32-32,26.34,26.35a8,8,0,0,0,11.32-11.32L75.31,128,96,107.31l26.34,26.35a8,8,0,0,0,11.32-11.32L107.31,96,128,75.31l26.34,26.35a8,8,0,0,0,11.32-11.32L139.31,64l32-32L224,84.69Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#141414] text-base font-bold leading-tight">Accompagnement Complet</h2>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">De la conception à l'installation, nous vous accompagnons à chaque étape.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e0e0e0] bg-white p-4 flex-col">
+                <div class="text-[#141414]" data-icon="PencilLine" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H216a8,8,0,0,0,0-16H115.32l112-112A16,16,0,0,0,227.32,73.37ZM136,75.31,152.69,92,68,176.69,51.31,160ZM48,208V179.31L76.69,208Zm48-3.31L79.32,188,164,103.31,180.69,120Zm96-96L147.32,64l24-24L216,84.69Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#141414] text-base font-bold leading-tight">Design Personnalisé</h2>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">Nous créons des designs personnalisés pour répondre à vos besoins spécifiques.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e0e0e0] bg-white p-4 flex-col">
+                <div class="text-[#141414]" data-icon="Hammer" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M251.34,112,183.88,44.08a96.1,96.1,0,0,0-135.77,0l-.09.09L34.25,58.4A8,8,0,0,0,45.74,69.53L59.47,55.35a79.92,79.92,0,0,1,18.71-13.9L124.68,88l-96,96a16,16,0,0,0,0,22.63l20.69,20.69a16,16,0,0,0,22.63,0l96-96,14.34,14.34h0L200,163.3a16,16,0,0,0,22.63,0l28.69-28.69A16,16,0,0,0,251.34,112ZM60.68,216,40,195.31l68-68L128.68,148ZM162.34,114.32,140,136.67,119.31,116l22.35-22.35a8,8,0,0,0,0-11.32L94.32,35a80,80,0,0,1,78.23,20.41l44.22,44.51L188,128.66l-14.34-14.34A8,8,0,0,0,162.34,114.32Zm49,37.66-12-12L228,111.25l12,12Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#141414] text-base font-bold leading-tight">Installation Professionnelle</h2>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">Nous assurons une installation professionnelle pour un résultat impeccable.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">Produits</a>
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">Services</a>
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">Portfolio</a>
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">Qui Sommes-Nous</a>
+                <a class="text-[#757575] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+              </div>
+              <p class="text-[#757575] text-base font-normal leading-normal">© 2024 Artisanat Marocain. Tous droits réservés.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

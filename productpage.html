@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f2f2f2] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#141414]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">Artisan Stone</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="nav-link" href="productpage.html">Products</a>
+              <a class="nav-link" href="service.html">Services</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="aboutUs.html">Qui Sommes-Nous</a>
+              <a class="nav-link" href="contactUs.html">Contact</a>
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </div>
+            <div class="hamburger" id="hamburger-menu" tabindex="0" aria-label="Open navigation" role="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <button
+              id="quote-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#141414] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Request a Quote</span>
+            </button>
+          </div>
+        </header>
+        <nav class="mobile-nav" id="mobile-nav">
+          <a class="nav-link" href="productpage.html">Products</a>
+          <a class="nav-link" href="service.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="aboutUs.html">Qui Sommes-Nous</a>
+          <a class="nav-link" href="contactUs.html">Contact</a>
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </nav>
+        <script>
+          const hamburger = document.getElementById('hamburger-menu');
+          const mobileNav = document.getElementById('mobile-nav');
+          hamburger.addEventListener('click', () => {
+            mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+          hamburger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+            }
+          });
+        </script>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#141414] tracking-light text-[32px] font-bold leading-tight min-w-72">Marble Collection</p></div>
+            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Explore our exquisite selection of marble, sourced from the finest quarries around the world. Each type offers unique veining, color, and characteristics, perfect for
+              enhancing any architectural or design project.
+            </p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDS0wbcWMy92JigCq9XTEceuMTGo1D55eYDPBTdXBFpLIi58A7EIPETBr4KmMFIq2pobIbvHuWHhzdEHOd3voeOk06VyNz81Zgt9sjR92MYNeH7DudAoNWZS8iNa6dV77FYnIpKk125T8Sf3EvoerL_0hw4lJDLuOaUqOFiu9EXJk_kD5haIRHO3qGqVWM8k3xC3SIZYtxR0aSuLTpMCn3jbzSPngG7FZeXYAopYakqNbZD4Slbm5sEY2qd00uWTQUXUQk5t0LeZY");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Carrara Marble</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">
+                    Renowned for its classic white background and subtle grey veining, ideal for sculptures and building decor.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCT_B0n6tNQEgiEI1QG4juEU2ZEwgDespoZPYDetgs4jrtGVDMrbws8cjb6Gmhqf36NALOYvhADFhjHnkd5Sue03W246Mh0WVkFL8S6V-yNTHtDg5r1PnxJPb-gcUiAsq7f8d_UIOQQlCvq-FGJgMlLakFppJPawjwKcYOtdr3do1N18a3CCzDEq3oa7MpoWqQxO7EnE-4N3rHQrxt0L5El83QmznYNrUVZXzFkgucC_PvJz8saOFEFIMrXuVPxTKJRM-BpQvVoh6Q");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Calacatta Marble</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">Distinguished by its bold veining and luxurious appearance, often used in high-end interiors.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2VT1u5H9HVr_DaqMwohpDv8kaT7XYxRSWDSpeg2z18ZBXS_sjzyMiYwKD099F0HFXOU5RtxAvqTayvde0L2US81vjT_45Sj3CrmAiO0XThqua9vuTKxDxiDdv_tKv8x-NEnzAdltFA66ewDsdmmqvlNPYg_YIkLVEDn8gWZwe4UE3HRMDm6iEGKN0bRWDqE2yMJTRpbyh5wBaVO0m3lcytq0I5r-WIumzOKtmbQeN232OYNG8PXhSPYUosHLhK7MzUW2lbm1nKnY");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Moroccan Grey Marble</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">A unique marble with a distinctive grey hue, perfect for adding a touch of Moroccan elegance.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAoofD6xPs6PvLYIpMaTBlL6DpXzGHt00M42eTfFIxRfnaEElCiwrt2-R7QxVAa8dZpKozQy0FN8ZQAFRxYbuINpmrbTXhvrkxrlRdfULLfc_ssoeo9Fb-qX0SN28xC_0ChX7PMe9i3f7tq4aFrSIrpNZLLzn4o4O6HevJTQCRmbluyh9yhqzjNPFr8vR0zWjhpbLhUcNraa2NzhNiFSZvCOhHw8WVt2pMPYBmWti7SJ8n5sLZDinbsEBQCCfn3RDEtJIAa0WltSE");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Emperador Marble</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">Rich brown marble with intricate veining, suitable for creating warm and inviting spaces.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDD2YejMk2BNCPwmsxFxe7x6ZuL8Hdxs3HGVcg9EuEVc3m8DgQT1B0BIJxS8A1xLpJJ7JZr-xUGVyZYeV4uQ_-4FItXIpZbkDvk9uhMb9iSoCzS4jRXaPFq59hP9kIG35myxa-X8jHKXv7VYe0IRePr9AmWGS9X2iXNPmSfUgFnFI58xiL0xkJKQ62SRX6Ek9nprtBktK9gbUe75cVkRqBW-v2emdK07rEqZPh4Rh2toWt51H6MYPza9iMDRdaoOHyGI7NbxGQaNWo");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Crema Marfil Marble</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">Creamy beige marble with delicate veining, offering a neutral and sophisticated aesthetic.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCH1l6P90TIfbyIxp3eDmBcU-nWQUdsq1h0hbuYYuSdDW-RgOIh23P7W2iNfCx0bfiuV7hqkIdQgDcpPRDOv8RDQF4YjZp7n4C-bi_Oi7o3QMcznpY0Wrqeknf_VNtz64lvdEcrprBRzpfYK_STxuWfsfm1XOQuD89xbznZh9X58hsxovurFwd66yvQ-bb2FDWDJpJf1AlXKFaMpuOmOsgSDTrBCUszoN7vp0XMLu1SnsU5KH0YRKHCZfhQK2Co_to3XcbmFKXelVY");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Nero Marquina Marble</p>
+                  <p class="text-[#757575] text-sm font-normal leading-normal">Striking black marble with white veining, creating a dramatic contrast in any design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
